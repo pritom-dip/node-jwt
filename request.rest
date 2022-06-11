@@ -1,0 +1,38 @@
+Get http://localhost:3004/users
+
+###
+
+Get http://localhost:3002/posts
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicHJpdG9tIiwiaWF0IjoxNjU0OTUyNTM4LCJleHAiOjE2NTQ5NTI1Njh9.7W5-CAskUvXYX8fUmBWtBZZDE4yemF25s3LDtGyFufs
+
+###
+
+POST http://localhost:3004/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicHJpdG9tIiwicGFzc3dvcmQiOiIkMmIkMTAkUEJiTE50dVBDNXFvYTNCSFdIa2Y0ZXJObzNxRE9MOElkalZMYWRCVHh6UUZLUC5zelMxa3EiLCJpYXQiOjE2NTQ5NTI1MDJ9.LquRrkPVnsooGR1z4Q7BZsMVzunEya4MCiEMpxH6HaU"
+}
+
+###
+
+POST http://localhost:3004/users
+Content-Type: application/json
+
+{
+    "name": "pritom",
+    "password": "123456" 
+}
+
+### 
+
+POST http://localhost:3004/users/login
+Content-Type: application/json
+
+{
+    "name": "pritom",
+    "password": "123456" 
+}
+
+###
+
